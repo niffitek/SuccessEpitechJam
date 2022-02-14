@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CloudSpawner : MonoBehaviour
 {
     public GameObject prefab;
+    private static CloudSpawner spawnerInstance;
 
     private string[] sprites = {
         "Clouds/Cloud1",
@@ -16,6 +17,16 @@ public class CloudSpawner : MonoBehaviour
     IEnumerator Start()
     {
         DontDestroyOnLoad(this);
+
+        if (spawnerInstance == null)
+        {
+            spawnerInstance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+
         while (true)
         {
             SpawnCloud();

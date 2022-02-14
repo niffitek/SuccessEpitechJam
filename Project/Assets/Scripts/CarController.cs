@@ -19,7 +19,7 @@ public class CarController : MonoBehaviour
 
     void Update()
     {
-        movement = -Input.GetAxisRaw("Vertical") * speed;
+        movement = -Input.GetAxisRaw("Horizontal") * speed;
         score.text = count.ToString();
 
         if (Input.GetKey(KeyCode.Space))
@@ -27,6 +27,10 @@ public class CarController : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     void FixedUpdate()
