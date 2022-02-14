@@ -55,11 +55,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\GoalHandler.cs" />
+    <Compile Include="Assets\Scripts\CloudSpawner.cs" />
     <Compile Include="Assets\Scripts\CarController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\VictoryMenu.cs" />
     <Compile Include="Assets\Scripts\CloudController.cs" />
-    <Compile Include="Assets\Scripts\CloudSpawner.cs" />
+    <Compile Include="Assets\Scripts\VictoryMenu.cs" />
+    <Compile Include="Assets\Scripts\QuoteRandomizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

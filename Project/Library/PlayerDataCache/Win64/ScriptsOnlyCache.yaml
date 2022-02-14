@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - CloudSpawner
     - GoalHandler
     - MainMenu
+    - QuoteRandomizer
     - VictoryMenu
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -243,6 +244,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3370}
     - Class: 114
       Script: {instanceID: 5408}
+    - Class: 114
+      Script: {instanceID: 17550}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -822,6 +825,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuoteRandomizer
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
